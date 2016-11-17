@@ -65,20 +65,19 @@ $(document).ready(function(e){
 /* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
 .board{
     width: 95%;
-margin: 60px auto;
+
 height: 500px;
 background: #fff;
  margin-top: 30px;
     
-/*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+
 }
 .board .nav-tabs {
     position: relative;
-    /* border-bottom: 0; */
     /* width: 80%; */
     margin: 40px auto;
     margin-bottom: 0;
-    box-sizing: border-box;
+    
 
 }
 
@@ -108,7 +107,7 @@ p.narrow{
     color: #555555;
     cursor: default;
     /* background-color: #ffffff; */
-    border: 0;
+   
     border-bottom-color: transparent;
 }
 
@@ -181,6 +180,7 @@ li.active span.round-tabs.five{
 }
 .nav-tabs > li {
     width: 20%;
+	padding-bottom:60px;
 }
 /*li.active:before {
     content: " ";
@@ -338,15 +338,6 @@ left: 35%;
 	
 	
 	
-	
-	.board{
-	
-	border: solid 1px white;
-	box-shadow: 0 0 10px rgba(0,0,0,0.6); 
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6); 
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-	-o-box-shadow: 0 0 10px rgba(0,0,0,0.6); 
-	} 
 	
 	
 	
@@ -538,78 +529,93 @@ left: 35%;
 
 
 
-                <div class="board " >
+                <div class="board" >
 				
 				
                     <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
                     <div class="board-inner" >
                     <ul class="nav nav-tabs" id="myTab">
-                    <div class="liner"></div>
-                     <li class="active">
-                     <a href="#home" data-toggle="tab" title="Medicines">
+                    <!--<div class="liner"></div>-->
+                     <li ><!--class="active">-->
+                     <a href="#home" data-toggle="tab" pointer="cursor" >
                       <span class="round-tabs one">
                               <i class="fa fa-medkit" style="font-size:30px;color:#c9302c;"></i>
+							  <h5>MEDICINES</h5>
+							  <div class="dropdown-menu dropdown-menu-right">
+								<button class="dropdown-item" type="button">Action</button>
+								<button class="dropdown-item" type="button">Another action</button>
+								<button class="dropdown-item" type="button">Something else here</button>
+							  </div>
                       </span> 
                      </a></li>
-
-                  <li><a href="#profile" data-toggle="tab" title="Doctors">
+					 
+                  <li><a href="#profile" data-toggle="tab" >
                      <span class="round-tabs two">
                           <i class="fa fa-user-md" style="font-size:30px;color:#c9302c;"></i>
+						   <h5>DOCTORS</h5>
                      </span> 
                       </a>
                  </li>
 				  <li><a href="#profile" data-toggle="tab" title="Diagnositic Labs">
                      <span class="round-tabs two">
                        <i class="fa  fa-flask" style="font-size:30px;color:#c9302c;"></i>
+					   <h5>DOCTORS</h5>
                      </span> 
                     </a>
                  </li>
-				  <li><a href="#profile" data-toggle="tab" title="Nurse & Bed Assist">
+				  <li><a href="#profile" data-toggle="tab" >
                      <span class="round-tabs two">
                          <i class="fa fa-bed" style="font-size:30px;color:#c9302c;"></i>
+						 <h5>NURSE & BED ASSIST</h5>
                      </span> 
                     </a>
                  </li>
 
-                 <li><a href="#messages" data-toggle="tab" title="Personal Care">
+                 <li><a href="#messages" data-toggle="tab">
                      <span class="round-tabs three">
                          <i class="fa  fa-heartbeat" style="font-size:30px;color:#c9302c;"></i>
+						 <h5>PERSONAL CARE</h5>
                      </span> </a>
                      </li>
 
 
-                     <li><a href="#settings" data-toggle="tab" title="Health Packages">
+                     <li><a href="#settings" data-toggle="tab" >
                          <span class="round-tabs four">
                               <i class="fa fa-cart-plus" style="font-size:30px;color:#c9302c;"></i>
+							  <h5>HEALTH PACKAGES</h5>
                          </span> 
                      </a></li>
 
-                     <li><a href="#doner" data-toggle="tab" title="Blood Bank">
+                     <li><a href="#doner" data-toggle="tab">
                          <span class="round-tabs five">
                               <i class="fa fa-tint" style="font-size:30px;color:#c9302c;"></i>
+							  <h5>BLOOD BANK</h5>
                          </span> </a>
                      </li>
 					 
-					   <li><a href="#doner" data-toggle="tab" title="Ambulance">
+					   <li><a href="#doner" data-toggle="tab" >
                          <span class="round-tabs five">
                               <i class="fa fa-ambulance" style="font-size:30px;color:#c9302c;"></i>
+							  <h5>AMBULANCE</h5>
                          </span> </a>
                      </li>
-					   <li><a href="#doner" data-toggle="tab" title="EHR">
+					   <li><a href="#doner" data-toggle="tab" >
                          <span class="round-tabs five">
                               <i class="fa fa-file-text-o" style="font-size:30px;color:#c9302c;"></i>
+							  <h5>EHR</h5>
                          </span> </a>
                      </li>
-					   <li><a href="#doner" data-toggle="tab" title="Equipment">
+					   <li><a href="#doner" data-toggle="tab" >
                          <span class="round-tabs five">
                                <i class="fa  fa-cutlery" style="font-size:30px;color:#c9302c;"></i>
+							   <h5>EQUIPMENT</h5>
                          </span> </a>
                      </li>
                      
                      </ul>
 					 </div>
 
-                     <div class="tab-content" >
+                     <!--<div class="tab-content" >
                       <div class="tab-pane fade in active" id="home">
  <h3 class="head text-center">Create a Bootsnipp<sup>™</sup> Profile</h3>
                           <p class="narrow text-center">
@@ -652,7 +658,7 @@ left: 35%;
                           <p class="text-center">
                     <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
                 </p>
-                      </div>
+                      </div>-->
 					  
                       <div class="tab-pane fade" id="doner">
   <div class="text-center">
