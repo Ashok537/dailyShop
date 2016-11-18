@@ -3440,6 +3440,7 @@ fieldset[disabled] .btn-link:focus {
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
+  margin-left: 11px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -3864,7 +3865,7 @@ tbody.collapse.in {
   z-index: 2;
   float: left;
   width: 100%;
-  margin-bottom: 0;
+ margin-bottom:6px;
 }
 .input-group .form-control:focus {
   z-index: 3;
