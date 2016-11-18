@@ -3542,6 +3542,8 @@ tbody.collapse.in {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);*/
 }
+
+
 .dropdown-menusearch {
   position: absolute;
   top: 100%;
@@ -3565,13 +3567,15 @@ tbody.collapse.in {
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);*/
 }
 
-.dropdown-menu .divider {
+
+
+.dropdown-menu .divider,.dropdown-menusearch .divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
-.dropdown-menu > li > a {
+.dropdown-menu > li > a,.dropdown-menusearch > li > a {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -3581,14 +3585,19 @@ tbody.collapse.in {
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:focus,
+.dropdown-menusearch > li > a:hover,
+.dropdown-menusearch > li > a:focus {
   color: #262626;
   text-decoration: none;
   background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
+.dropdown-menu > .active > a:focus,
+.dropdown-menusearch > .active > a,
+.dropdown-menusearch > .active > a:hover,
+.dropdown-menusearch > .active > a:focus  {
   color: #fff;
   text-decoration: none;
   background-color: #337ab7;
@@ -3596,18 +3605,23 @@ tbody.collapse.in {
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a:focus ,
+.dropdown-menusearch > .disabled > a,
+.dropdown-menusearch > .disabled > a:hover,
+.dropdown-menusearch > .disabled > a:focus{
   color: #777;
 }
 .dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a:focus,
+.dropdown-menusearch > .disabled > a:hover,
+.dropdown-menusearch > .disabled > a:focus {
   text-decoration: none;
   cursor: not-allowed;
   background-color: transparent;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-.open > .dropdown-menu {
+.open > .dropdown-menu,.open > .dropdown-menusearch {
   display: block;
 }
 .open > a {
